@@ -19,20 +19,12 @@ repositories {
 }
 
 dependencies {
-
-	// web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
-
-	// db
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	runtimeOnly 'com.h2database:h2'
-
-	// lombok
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
-
-	// test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
